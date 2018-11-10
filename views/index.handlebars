@@ -22,7 +22,7 @@
   {{#each burger}}
     {{#unless devoured }}
       <div><strong>{{this.burger}}</strong>{{this.about}}</div>
-      <button id = "order">Eat Me</button>
+      <button id = "order" value = {{this.id}}>Eat Me</button>
       <hr>
     {{/unless}}
   {{/each}}

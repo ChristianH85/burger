@@ -23,6 +23,7 @@ $(function() {
 
         let id = $(this).data("id");
         let eaten = {
+            id,
             devoured: 1
         };
 

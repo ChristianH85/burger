@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
     burger.create([
       "burger", "devoured"
     ], [
-      req.body.burger, req.body.devoured
+      req.body.burger, ,req.body.about, req.body.devoured
     ], function(result) {
       res.json({ id: result.insertId });
     });
