@@ -1,0 +1,45 @@
+<div class = "jumbotron">
+    <h1>Meister Burger's</h1>
+    <p>All our meats sourced locally from Sweeny Todd's Butchery and Barbershop!</p>
+</div>
+<h1 >Choose Wisely or Create Your Own</h1>
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <form class ="create-form" id="newBurg">
+            <h3 id ="AddItUp">Create Something New</h3>
+            <input type="text" class="form-control" id = "name" placeholder="Burger name">
+            <hr>
+            <textarea class="form-control" id="burgerdisc" placeholder="Burger description" rows="3"></textarea>
+            <hr>
+            <button class="submit">Submit Your Burger</button>
+        </form>
+    </div>
+</div>    
+<h2>Burgers We Have</h2>
+<div class="row">
+    <div class="col-sm-12 col-md-6">
+<ul>
+  {{#each burger}}
+    {{#unless devoured }}
+      <div><strong>{{this.burger}}</strong>{{this.about}}</div>
+      <button id = "order">Eat Me</button>
+      <hr>
+    {{/unless}}
+  {{/each}}
+</ul>
+</div>
+</div>
+
+<h2>Burgers We Had</h2>
+<div class="row">
+    <div class="col-sm-12 col-md-6">
+<ul>
+  {{#each burger}}
+    {{#if devoured }}
+      <div><strong>{{this.burger}}</strong>{{this.about}}</div>
+      <hr>
+    {{/if}}
+  {{/each}}
+</ul>
+</div>
+</div>

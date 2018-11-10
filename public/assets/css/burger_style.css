@@ -1,0 +1,23 @@
+.jumbotron{
+background-color: royalblue;
+text-align: center;
+}
+body{
+    background-color: orange;
+}
+#name{
+    width: 90%; 
+    height: 6%;
+    margin:auto;
+}
+#burgerdisc{
+    width: 90%;
+    margin: auto;
+}
+#newBurg{
+    width: 40%;
+    margin: auto;
+    border: 3px solid tan;
+    background-color: royalblue;
+    padding:4px;
+}
